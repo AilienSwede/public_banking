@@ -33,4 +33,21 @@ models:
   banking:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: view
+    staging:
+      +materialized: table
+      +schema: staging
+
+seeds:
+  +enabled: true
+  banking:
+  LKP:
+  - name: country_codes
+    description: A mapping of two-letter country codes to country names    
+    columns:      
+      - name: country_code      
+      - name: country_name    
+    tests:      
+      - unique: country_code      
+      - not_null: country_code      
+      - unique: country_name      
+      - not_null: country_name
