@@ -1,0 +1,113 @@
+version: 2
+
+seeds:
+  - name: branch_service_type
+    description: Branch Service Type Decode
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: BRSERTYP
+        description: Branch Service Type Code
+        tests:
+          - unique
+          - not_null
+        constraints:
+          - type: not_null
+          - type: unique
+      - name: Branch_Service_Type
+        tests:
+          - not_null
+        description: Branch Service Type
+    constraints:
+      - type: primary_key
+        columns: [BRSERTYP]
+  - name: chartering_agency
+    description: Chartering Agency Decode
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: CHRTAGNN
+        description: Institution Chartering Agency Code
+        tests:
+          - unique
+          - not_null
+      - name: chartering_agency
+        tests:
+          - not_null
+        description: Institution Chartering Agency
+  - name: institution_category
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: CLCODE
+        description: Institution Category Code
+        tests:
+          - unique
+          - not_null
+      - name: Institution_Category
+        tests:
+          - not_null
+        description: Institution Category
+  - name: institution_class
+    description: Institution Class Decode
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: BKCLASS
+        description: Institution Class Code
+        tests:
+          - unique
+          - not_null
+      - name: institution_class
+        tests:
+          - not_null
+        description: Institution Class
+  - name: institution_specialization
+    config:
+      contract:
+        enforced: true
+    description: Institution Specialization Decode
+    columns:
+      - name: SPECDESC
+        description: Institution Asset Specialization Code
+        tests:
+          - unique
+          - not_null
+      - name: asset_specialization
+        tests:
+          - not_null
+        description: Institution Asset Specialization
+  - name: insuring_agency
+    config:
+      contract:
+        enforced: true
+    description: Institution Insuring Agency Decode
+    columns:
+      - name: INSAGNT1
+        description: Institution Insuring Agency Code
+        tests:
+          - unique
+          - not_null
+      - name: insuring_agency
+        tests:
+          - not_null
+        description: Institution Insuring Agency
+  - name: regulatory_agency
+    config:
+      contract:
+        enforced: true
+    description: Institution Regulatory Agency Decode
+    columns:
+      - name: REGAGNT
+        description: Institution Regulatory Agency Code
+        tests:
+          - unique
+          - not_null
+      - name: regulatory_agency
+        tests:
+          - not_null
+        description: Institution Regulatory Agency
