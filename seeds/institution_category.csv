@@ -1,0 +1,38 @@
+CLCODE,Institution_Category
+3,National Member Bank
+13,State Member Bank
+15,State Member Industrial Bank
+21,State Nonmember Bank
+23,State Nonmember Industrial Bank
+33,Federal Stock Savings Bank
+34,Federal Mutual Savings Bank
+35,State Stock S&L Association
+36,State Mutual S&L Association
+37,Federal Stock S&L Association
+38,Federal Mutual S&L Association
+41,State Stock Savings Bank
+42,State Mutual Savings Bank
+43,Federal Stock Savings Bank
+44,Federal Mutual Savings Bank
+50,National Member Trust Company
+51,Noninsured Commercial Bank
+52,International Banking Act
+53,Noninsured Industrial Bank
+54,State Nonmember Trust Company
+55,State Domestic Branch Of Foreign Bank
+56,National Domestic Branch Of Foreign Bank
+57,New York Investment Company
+58,State Member Trust Company
+59,Ots Chartered Trust Company
+61,Noninsured Private Bank
+62,Noninsured Occ Loan Workout Bank
+63,Noninsured State Member Loan Workout Bank
+64,Noninsured State Nonmember Loan Workout Bank
+81,Noninsured Stock Savings Bank
+82,Noninsured Mutual Savings Bank
+85,Noninsured Stock Savings And Loan Association
+86,Noninsured Mutual Savings And Loan Association
+89,Insurance Company
+91,State Chartered Credit Union
+92,Federal Chartered Credit Union
+25,State Nonmemeber Mutual Bank

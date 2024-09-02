@@ -1,0 +1,11 @@
+BKCLASS, institution_class_description
+N,National Member Banks
+SM,State Member Banks
+NM,State Nonmember Banks
+SI,Stock And Mutual Savings Banks
+SB,Savings Banks And Savings And Loans
+SL,State Stock Savings And Loans
+SA,"As Of July 21, 2011, Fdic Supervised State Chartered Thrifts And Occ Supervised Federally Chartered Thrifts. Prior To That Date, State Or Federally Chartered Savings Associations Supervised By The Office Of Thrift Supervision (Ots)."
+OI,Other Insured Institutions
+NC,Noninsured Institutions
+NS,Noninsured Savings Institutions And Insurance Co.

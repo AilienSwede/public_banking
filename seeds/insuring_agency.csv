@@ -1,0 +1,10 @@
+INSAGNT1,insuring_agency
+BIF,Bank Insurance Fund
+DIF,Deposit Insurance Fund
+SAIF,Savings Insurance Fund
+STATE,State Insured
+PRIV,Private Insured
+SOVER,Foreign Insured
+OTHER,Other Insured
+NONE,Not Insured
+NCUA,National Credit Union Association Insurance
