@@ -8,17 +8,22 @@ seeds:
         enforced: true
     columns:
       - name: BRSERTYP
-        description: Branch Service Type Code
-        tests:
-          - unique
-          - not_null
+        data_type: varchar
         constraints:
           - type: not_null
           - type: unique
-      - name: Branch_Service_Type
-        tests:
+          - type: primary_key
+        description: Branch Service Type Code
+        data_tests:
+          - unique
           - not_null
+      - name: Branch_Service_Type
+        data_type: varchar(100)
         description: Branch Service Type
+        constraints:
+          - type: not_null
+        data_tests:
+          - not_null
     constraints:
       - type: primary_key
         columns: [BRSERTYP]
@@ -29,26 +34,28 @@ seeds:
         enforced: true
     columns:
       - name: CHRTAGNN
+        nullability: not null
         description: Institution Chartering Agency Code
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: chartering_agency
-        tests:
+        data_tests:
           - not_null
         description: Institution Chartering Agency
   - name: institution_category
+    description: Institution Category Decode
     config:
       contract:
         enforced: true
     columns:
       - name: CLCODE
         description: Institution Category Code
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: Institution_Category
-        tests:
+        data_tests:
           - not_null
         description: Institution Category
   - name: institution_class
@@ -59,11 +66,11 @@ seeds:
     columns:
       - name: BKCLASS
         description: Institution Class Code
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: institution_class
-        tests:
+        data_tests:
           - not_null
         description: Institution Class
   - name: institution_specialization
@@ -74,11 +81,11 @@ seeds:
     columns:
       - name: SPECDESC
         description: Institution Asset Specialization Code
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: asset_specialization
-        tests:
+        data_tests:
           - not_null
         description: Institution Asset Specialization
   - name: insuring_agency
@@ -89,11 +96,11 @@ seeds:
     columns:
       - name: INSAGNT1
         description: Institution Insuring Agency Code
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: insuring_agency
-        tests:
+        data_tests:
           - not_null
         description: Institution Insuring Agency
   - name: regulatory_agency
@@ -104,10 +111,10 @@ seeds:
     columns:
       - name: REGAGNT
         description: Institution Regulatory Agency Code
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: regulatory_agency
-        tests:
+        data_tests:
           - not_null
         description: Institution Regulatory Agency
